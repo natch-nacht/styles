@@ -538,15 +538,13 @@
     </layout>
   </citation>
   <!-- Para generar la bibliografía -->
-  <bibliography et-al-min="4" et-al-use-first="3" subsequent-author-substitute="" entry-spacing="0">
+  <bibliography et-al-min="4" et-al-use-first="3" subsequent-author-substitute="" entry-spacing="0" line-spacing="1">
     <sort>
       <key macro="contributors"/>
       <key macro="date"/>
     </sort>
     <layout suffix=".">
-      <group display="block">
-        <text macro="contributors"/>
-      </group>
+      <text macro="contributors" suffix='&#xD;'/>
       <group display="left-margin">
         <text macro="date" suffix=" "/>
         <date variable="original-date" prefix="[" suffix="]">
@@ -562,7 +560,6 @@
           <text macro="secondary-contributors"/>
           <text macro="edition"/>
           <text macro="issue"/>
-          <text macro="publisher"/>
           <text macro="locators"/>
           <text macro="access" prefix=". "/>
           <text macro="media"/>
